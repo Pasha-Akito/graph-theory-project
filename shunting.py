@@ -29,7 +29,7 @@ def shunt(infix):
             # Push c to the stack.
             stack = stack + c
         elif c == ')':
-            while stack[-1] == '(':
+            while stack[-1] != "(":
                 # Append operator at top of stack to output.
                 postfix = postfix + stack[-1]
                 # Remove operator from stack.
@@ -49,3 +49,9 @@ infix = "3+4*(2-1)"
 postfix = "3421-*+"
 
 print(f"{infix} - > {shunt(infix)}")
+
+if __name__ == "__main__":
+    for infix in ["a.(b.b)*.a", "1.(0.0)*.1"]:
+        print(f"infix:   {infix}")
+        print(f"postfix: {shunt(infix)}")
+        print()
