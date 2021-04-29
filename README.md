@@ -29,6 +29,8 @@ We use this NFA to match identical strings to what the user inputted and then ou
 
 -------------------------
 
+
+
 ## Explanation of the Algorithm
 
 When the user inputs a string, we first need to make sure it is ordered correctly for Thompson's Construction.
@@ -43,14 +45,17 @@ We input the postfix into thompson.py. This is Thompson's Construction which is 
 
 ## What is a Regular Expression?
 
-- Regular Expression, or Regex, was proposed in the 1950s by Stephen Cole Kleene. 
+- Regular Expression, or Regex, was theorised in the 1950s by Stephen Cole Kleene. 
 Back then they would have state-based machines. These machines would need to be easily described when engineers were discussing about them between themselves.
-They would draw diagrams to describes the states of these machines, but it was hard to describe a diagram over the phone. So, they at first used chomsky type 3 naming convention to describe these machines over the phone. Kleene thought there was a better and more compact way to talk about these finite automata. So, he proposed Regular Expression, which is the simpliest way to describe finite automaton and languages. Chomsky Type 3, Automaton Diagrams and Regex are all equivalent expressions and mean the same thing. 
-- Regular Expressions is a way of defining patterns that are used to find and manage text. We use Regexes all the time without realising it, google and other search engines all utilize Regexes to help us find what we are looking for. Text editors like microsoft word also use Regexes. When a user does a simple search, the application uses regex to find that string of characters. If the user searches for all text files by typing `*.txt`, in the background what is actually being searched for in the text file is `^.*\.txt$`. The syntax of regexes seems confusing at first but are very useful and compact.
+They would draw diagrams to describe the states of these machines, but it was hard to describe a diagram over the phone. So, they at first used chomsky type 3 naming convention to describe these machines over the phone. Kleene thought there was a better and more compact way to talk about these finite automata. So, he proposed Regular Expression, which is the simplest way to describe finite automaton and languages. Chomsky Type 3, Automaton Diagrams and Regex are all equivalent expressions and mean the same thing. 
+- Regular Expressions is a way of defining patterns that are used to find and manage text. Search engines use regexes to find matches from the string we entered. Many text editors also use Regexes. There are special characters that can be used to help us refine our searches, an example of this would be wildcard asterix `*`. If we are looking for all mp4 files on our system, we can input `*.mp4` in the file directory. The asterisk `*` wildcard indicates anything ending in `.mp4` will result in a match and will display all the mp4 files we have. This is a basic example of how we use Regexes. 
+- 
 
 -------------------------
 
 ## How do regular expressions differ across implementations?
+
+- There are many implementations of Regexes from how the engine runs and to the language itself. There are two different types of using Regexes as engines. The first being Regex-directed  We first introduce a Regex token to a Regex engine. The engine then tries the regex on every single character in the text file and tries to find a match. If a match is found, it will continue through the regex and the matched string. 
 
 -------------------------
 
@@ -68,5 +73,6 @@ https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 - Regular Expression
 https://en.wikipedia.org/wiki/Regular_expression
 https://www.computerhope.com/jargon/r/regex.htm
-https://www.regular-expressions.info/
+https://www.regular-expressions.info/tutorial.html
+https://programminghistorian.org/en/lessons/understanding-regular-expressions
 https://www.youtube.com/watch?v=528Jc3q86F8&t=874s&ab_channel=Computerphile
