@@ -71,6 +71,8 @@ It was hard to describe diagrams over the phone, so notion that can be read easi
 
 ## Can all formal languages be encoded as regular expressions?
 
+
+
 -------------------------
 
 ## Research done
@@ -97,3 +99,5 @@ https://en.wikipedia.org/wiki/Deterministic_finite_automaton
 - Regular Expression Engine
 https://www.regular-expressions.info/engine.html
 https://se.ifmo.ru/~ad/Documentation/Mastering_RegExp/mastregex2-CHP-4-SECT-3.html
+
+- Formal Languages
