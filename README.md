@@ -71,7 +71,9 @@ It was hard to describe diagrams over the phone, so notion that can be read easi
 
 ## Can all formal languages be encoded as regular expressions?
 
+- A formal language can be encoded into a regular expression if we use regular expression notation. If X is a Regular Expression denoting the language L(X) and Y is a Regular Expression denoting the language L(Y), then we can cancatenate then Y + X is Regular Expression denoting the language L(X) U L(Y) where L(X + Y) are the same. In formal languages, the alphabet can be any set. We use the usual sense of the word to understand the formal language. A word over an alphabet can be any sequence of letters. We use Sigma Σ* (Kleene Star) to denote a set of all words over an alphabet. For every single alphabet there is only one worth of Length 0 which we can use epsilon to denote. We can also concatenate these words to form a new word. When a word is concatenated by an empty word we receive the original word.
 
+- A formal language is composed of words whose letters are taken from the alphabet and follow well structured rules. We can take algebra for example. The variables called Z, Y, X, V in the equation Z = Y + X + V can be rearranged to Y = X + V - Z. All these variables are just given names and without any context don't actually having any meaning associated with them. Programming languages can be considered formal languages which follow a set of rules, syntax and notation but inherently have no value to them other than being a set of letters we can manipulate because of the set of rules. When you add context to these languages they become very popular. Algebra when which you try and just solve for Z will give you a number, but when we use algebra in physics or geometry can give come to understand the world around us because we were able to use a formal language dedicated by a well structed set of rules.
 
 -------------------------
 
@@ -101,3 +103,4 @@ https://www.regular-expressions.info/engine.html
 https://se.ifmo.ru/~ad/Documentation/Mastering_RegExp/mastregex2-CHP-4-SECT-3.html
 
 - Formal Languages
+https://en.wikipedia.org/wiki/Formal_language
